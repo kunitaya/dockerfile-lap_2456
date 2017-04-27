@@ -1,5 +1,5 @@
 #
-# Apache2.4 & PHP7.0
+# Apache2.4 & PHP5.6
 # kunitaya/apache24_php56
 #
 # 2017-04-27
