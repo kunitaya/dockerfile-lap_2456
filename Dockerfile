@@ -27,7 +27,7 @@ RUN yum install -y httpd httpd-tools which
 RUN yum install --enablerepo=remi,remi-php56 -y php-pecl-memcached
 
 # php
-RUN yum install --enablerepo=epel,remi-php56 -y php php-devel php-gd php-mbstring php-mcrypt php-mysqlnd php-pear php-xml php-opcache && \
+RUN yum install --enablerepo=epel,remi-php56 -y php php-devel php-gd php-mbstring php-mcrypt php-mysqlnd php-pear php-xml php-opcache php-soap && \
     sed -i -e "s/;date.timezone *=.*$/date.timezone = Asia\/Tokyo/" /etc/php.ini
 
 # clear
